@@ -11,6 +11,7 @@ from utils.config_manager import Util as config_manager_util
 
 get_template = template_manager_util.get_template
 get_config = config_manager_util.get_config
+plugin_config = config_manager_util.get_plugin_config("vinotes-demo-plugin")
 
 
 # write utility class
@@ -27,7 +28,7 @@ class Util:
         # write your command here
         print("Hello Vinotes!")
         print(f"Args: {self.command_args}")
-        print(f"Message from config: ")
+        print(f"Message from config: {plugin_config["opts"]["message"]}")
 
 
 # write helper functions here (delete the code below obv)
