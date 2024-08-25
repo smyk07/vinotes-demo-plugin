@@ -2,7 +2,7 @@
 # command: describe the command
 
 # import dependencies
-# import sys
+import sys
 
 
 # import templates and config
@@ -28,7 +28,7 @@ class Util:
         # write your command here
         print("Hello Vinotes!")
         print(f"Args: {self.command_args}")
-        print(f"Message from config: {plugin_config["opts"]["message"]}")
+        print(f"Message from config: {plugin_config['opts']['message']}")
 
 
 # write helper functions here (delete the code below obv)
@@ -37,4 +37,6 @@ class Util:
 
 # test file if run as main.
 if __name__ == "__main__":
-    pass  # testing code goes here.
+    test_util = Util(command_args=sys.argv[1:])
+    test_util.command()
+
