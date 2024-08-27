@@ -1,0 +1,8 @@
+{
+  "smyk07/vinotes-demo-plugin": {
+    "utils": ["vinotes-demo-plugin"],
+    "opts": {
+      "message": "Hello Vinotes! This is a message from the plugins config."
+    }
+  }
+}
