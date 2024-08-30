@@ -2,7 +2,7 @@
 # command: describe the command
 
 # import dependencies
-import sys
+# import sys
 
 
 # import templates and config
@@ -11,11 +11,6 @@ from utils.config_manager import Util as config_manager_util
 
 get_template = template_manager_util.get_template
 get_config = config_manager_util.get_config
-plugin_config = config_manager_util.get_plugin_config("vinotes-demo-plugin")
-
-# importing time provider independent plugin: 
-from utils.vinotes-demo-time-provider import Util as time-provider 
-time = time-provider.get_time()
 
 
 # write utility class
@@ -30,10 +25,7 @@ class Util:
 
     def command(self):
         # write your command here
-        print("Hello Vinotes!")
-        print(f"Args: {self.command_args}")
-        print(f"Message from config: {plugin_config['opts']['message']}")
-        print(f"Time from time-provider: {time}")
+        pass  # delete this line
 
 
 # write helper functions here (delete the code below obv)
@@ -42,5 +34,4 @@ class Util:
 
 # test file if run as main.
 if __name__ == "__main__":
-    test_util = Util(command_args=sys.argv[1:])
-    test_util.command()
+    pass  # testing code goes here.

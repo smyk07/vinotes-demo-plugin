@@ -1,5 +1,24 @@
 # vinotes-demo-plugin
 
-**Currently in development**
+This is a demo Vinotes 3rd Party Plugin. Just prints out some info...
 
-Demo 3rd-party Plugin for Vinotes
+## Usage
+
+This plugin only has one command: that is `vn vinotes-demo-plugin`
+
+## Release
+
+Add the below to your `plugin.json` for installing `vinotes-demo-plugin` in your vault:
+
+```json
+{
+  "smyk07/vinotes-demo-plugin": {
+    "utils": ["vinotes-demo-plugin", "vinotes-demo-time-provider"],
+    "opts": {
+      "message": "Hello Vinotes! This is a message from the plugins config."
+    }
+  }
+}
+```
+
+_Be sure to run `vn check-plugins` once added..._
