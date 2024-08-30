@@ -11,11 +11,12 @@ from utils.config_manager import Util as config_manager_util
 
 get_template = template_manager_util.get_template
 get_config = config_manager_util.get_config
-plugin_config = config_manager_util.get_plugin_config("vinotes-demo-plugin")
+plugin_config = config_manager_util.get_plugin_config("smyk07/vinotes-demo-plugin")
 
-# importing time provider independent plugin: 
-from utils.vinotes-demo-time-provider import Util as time-provider 
-time = time-provider.get_time()
+# importing time provider independent plugin:
+from utils.vinotes_demo_time_provider import Util as time_provider
+
+time = time_provider.get_time()
 
 
 # write utility class
