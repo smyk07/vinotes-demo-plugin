@@ -6,7 +6,9 @@ import datetime
 # import config
 from utils.config_manager import Util as config_manager_util
 
+
 get_config = config_manager_util().get_config
+plugin_config = config_manager_util.get_plugin_config("smyk07/vinotes-demo-plugin")
 
 
 # write utility class
